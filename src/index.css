@@ -6,3 +6,41 @@ body {
   font-family: theme('fontFamily.sans');
   
 }
+
+@layer components{
+  .btnLink{
+    /* background: linear-gradient(140.3deg, theme('colors.sec.alt.DEFAULT') -67.04%, theme('colors.sec.DEFAULT') 176.17%); */
+    @apply text-white rounded-xl inline-flex items-center justify-center text-center px-6 py-3 font-semibold text-base shadow-xl focus:shadow-none
+  }
+}
+
+.react-datepicker > *
+{
+  @apply font-sans
+}
+
+.react-datepicker__navigation 
+{
+   @apply mt-2;
+}
+
+.react-datepicker__header
+{
+  @apply bg-sky-200;
+}
+
+.react-datepicker__day-names
+{
+  @apply mt-3
+}
+
+.react-datepicker__day--outside-month
+{
+   opacity: 0.5;
+}
+
+.react-datepicker__day--selected,
+.react-datepicker__day--keyboard-selected
+{
+  @apply font-medium rounded-full bg-slate-800;
+}
