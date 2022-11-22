@@ -27,6 +27,10 @@ body {
   @apply w-full max-w-sm max-h-[90vh] text-left align-middle transition-all transform bg-white shadow-xl rounded-2xl
 }
 
+.export{
+  @apply p-1 px-2 ml-4 rounded-md text-[#C96FCC] bg-[#ffe583] shadow-md hover:shadow-sm flex items-center
+}
+
 .react-datepicker > *
 {
   @apply font-sans

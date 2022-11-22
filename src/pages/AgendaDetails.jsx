@@ -38,7 +38,7 @@ const AgendaDetails = () => {
         </div>
         <div className="flex justify-center">
           <button
-            className="p-1 px-2 ml-4 rounded-md text-[#C96FCC] bg-[#ffe583] shadow-md hover:shadow-sm flex items-center"
+            className="export"
             type="button"
             onClick={handlePrint}
           >
