@@ -5,6 +5,7 @@ import { useContext } from "react";
 import { AgendaContext } from "../context/AgendaContext";
 import SearchIcon from "../components/Icons/SearchIcon";
 import AgendaCard from "../components/AgendaCard";
+import { Link } from "react-router-dom";
 
 const AgendaHome = () => {
   const { sortedAgendas } = useContext(AgendaContext);
@@ -62,8 +63,12 @@ const AgendaHome = () => {
           </div>
         </div>
 
-        <div className="grid grid-cols-4 gap-4 m-8">
-          <AgendaCard agendaList={filteredAgenda} />
+        <div className="grid grid-cols-4 gap-8 m-8">
+          {filteredAgenda.map((agenda, index) => (
+            <Link to>
+            <AgendaCard agenda={agenda} index={index} key={agenda.id} />
+            </Link>
+          ))}
         </div>
 
         {openCreate && (
