@@ -8,11 +8,11 @@ import CustomDateInput from "./CustomDateInput";
 import CalendarIcon from "./Icons/CalendarIcon";
 import Button from "./Button";
 import SuccessToast from "./SuccessToast";
-import { v4 as uuidv4 } from "uuid";
+
 import { AgendaContext } from "../context/AgendaContext";
 
 const EditAgendaModal = ({ show, onClose = () => {}, setShow, agenda }) => {
-  const uuid = uuidv4;
+  
   const { updateAgenda } = useContext(AgendaContext);
 
   const [activeDate, setActiveDate] = useState(new Date(agenda.date).toISOString());
@@ -73,7 +73,7 @@ const EditAgendaModal = ({ show, onClose = () => {}, setShow, agenda }) => {
                 leaveFrom="opacity-100 scale-100"
                 leaveTo="opacity-0 scale-95"
               >
-                <Dialog.Panel className="w-full max-w-sm max-h-[90vh] text-left align-middle transition-all transform bg-white shadow-xl rounded-2xl">
+                <Dialog.Panel className="dialog-panel">
                   <div className="px-4 py-4">
                     <div className="flex justify-between items-center mb-6">
                       <p>Creat An Agenda</p>

@@ -61,10 +61,10 @@ const AgendaHome = () => {
           </div>
         </div>
 
-        <div className="grid grid-cols-4 gap-8 m-8 phone-mini:grid-cols-1 phone-lg:grid-cols-2 md:grid-cols-3 desktop-med:grid-cols-4">
+        <div className="card">
           {filteredAgenda.map((agenda, index) => (
            
-            <AgendaCard agenda={agenda} index={index} />
+            <AgendaCard agenda={agenda} index={index} key={agenda.id} />
             
           ))}
         </div>

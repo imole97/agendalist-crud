@@ -19,6 +19,14 @@ body {
   @apply border-2 border-[#8C1696] outline-0 outline-none rounded-2xl bg-white w-[15rem] pl-8 text-sm py-2 shadow-inner
 }
 
+.card {
+  @apply grid grid-cols-4 gap-8 m-8 phone-mini:grid-cols-1 phone-lg:grid-cols-2 md:grid-cols-3 desktop-med:grid-cols-4
+}
+
+.dialog-panel {
+  @apply w-full max-w-sm max-h-[90vh] text-left align-middle transition-all transform bg-white shadow-xl rounded-2xl
+}
+
 .react-datepicker > *
 {
   @apply font-sans

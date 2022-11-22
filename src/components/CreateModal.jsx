@@ -70,7 +70,7 @@ const CreateModal = ({ show, onClose = () => {}, setShow }) => {
                 leaveFrom="opacity-100 scale-100"
                 leaveTo="opacity-0 scale-95"
               >
-                <Dialog.Panel className="w-full max-w-sm max-h-[90vh] text-left align-middle transition-all transform bg-white shadow-xl rounded-2xl">
+                <Dialog.Panel className="dialog-panel">
                   <div className="px-4 py-4">
                     <div className="flex justify-between items-center mb-6">
                       <p>Creat An Agenda</p>
