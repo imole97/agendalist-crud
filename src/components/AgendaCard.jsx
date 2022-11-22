@@ -1,4 +1,4 @@
-import React, { useCallback, useEffect, useState } from "react";
+import React, { useState } from "react";
 import { useContext } from "react";
 import { useNavigate } from "react-router-dom";
 import { AgendaContext } from "../context/AgendaContext";
@@ -13,11 +13,11 @@ const AgendaCard = ({ agenda, index }) => {
   let descriptionArray = agenda.description.split(" ");
   let description = descriptionArray.slice(0, 8).join(" ");
   const [deleteSuccess, setDeleteSuccess] = useState(false);
-  //   const [done, setDone] = useState(false);
+  
   const { deleteAgenda, sortedAgendas, updateAgenda } =
     useContext(AgendaContext);
 
-  //   console.log(done);
+
 
   const navigate = useNavigate();
 
@@ -60,9 +60,7 @@ const AgendaCard = ({ agenda, index }) => {
     });
   };
 
-  //   useEffect(() => {
-  //     handleDone()
-  //   },[]);
+  
 
   return (
     <>
