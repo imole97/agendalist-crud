@@ -143,7 +143,7 @@ const EditAgendaModal = ({ show, onClose = () => {}, setShow, agenda }) => {
                       <div className="flex justify-end">
                         <Button
                           type="submit"
-                          className="bg-sec-alt-500 px-3 py-2"
+                          className="bg-sec-alt-500 px-4 py-2"
                         >
                           Edit
                         </Button>

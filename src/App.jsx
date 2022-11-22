@@ -1,4 +1,5 @@
 import { Route, Routes } from "react-router-dom";
+import AgendaDetails from "./pages/AgendaDetails";
 import AgendaHome from "./pages/AgendaHome";
 
 
@@ -7,6 +8,7 @@ function App() {
     <>
       <Routes>
         <Route path="/" element={<AgendaHome/>} />
+        <Route path="agenda/:id" element={<AgendaDetails/>} />
       </Routes>
     </>
   );

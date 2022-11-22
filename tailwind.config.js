@@ -9,13 +9,6 @@ module.exports = {
         sans: ["Poppins", ...defaultTheme.fontFamily.sans],
       },
       colors: {
-        pry: {
-          DEFAULT: "#F7F7FA",
-          alt: {
-            100: "#F8F8FA",
-            DEFAULT: "#F0F0F3",
-          },
-        },
         sec: {
           DEFAULT: "#275BAE",
           alt: {
@@ -31,12 +24,19 @@ module.exports = {
             550: "#1792D3",
           },
         },
-        tert: {
-          orange: "#FFEBE5",
-          blue: "#E5EFFF",
-        },
-      }
+      },
+      screens: {
+        "phone-mini": "200px",
+        "phone-xs": "320px",
+        "phone-sm": "375px",
+        "phone-md": "400px",
+        "phone-lg": "480px",
+        "desktop-med": "1350px",
+        "desktop-wide": "1440px",
+        max: "1920px",
+        ...defaultTheme.screens,
+      },
     },
   },
   plugins: [],
-}
+};

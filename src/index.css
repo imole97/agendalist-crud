@@ -10,11 +10,14 @@ body {
 @layer components{
   .btnLink{
     /* background: linear-gradient(140.3deg, theme('colors.sec.alt.DEFAULT') -67.04%, theme('colors.sec.DEFAULT') 176.17%); */
-    @apply text-white rounded-xl inline-flex items-center justify-center text-center px-6 py-3 font-semibold text-base shadow-xl focus:shadow-none
+    @apply text-white rounded-xl inline-flex items-center justify-center text-center px-6 py-3 font-semibold text-base shadow-lg hover:shadow-sm
   }
 }
 
 
+.search {
+  @apply border-2 border-[#8C1696] outline-0 outline-none rounded-2xl bg-white w-[15rem] pl-8 text-sm py-2 shadow-inner
+}
 
 .react-datepicker > *
 {
